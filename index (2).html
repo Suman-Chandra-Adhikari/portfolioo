@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suman Chandra Adhikari | Portfolio</title>
+    
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(to right, #4facfe, #00f2fe);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.8em;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2em;
+        }
+
+        /* Sections */
+        section {
+            padding: 60px 20px;
+        }
+
+        section h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2em;
+            color: #1f2933;
+        }
+
+        /* Container */
+        .container {
+            max-width: 900px;
+            margin: auto;
+        }
+
+        /* Cards */
+        .card {
+            background: white;
+            padding: 25px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+        }
+
+        /* Skills Cards */
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .card-container .card {
+            flex: 1 1 200px;
+            text-align: center;
+            font-weight: bold;
+            color: #4facfe;
+        }
+
+        /* Button */
+        button {
+            margin-top: 15px;
+            padding: 12px 20px;
+            font-size: 1em;
+            background-color: #4facfe;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #00f2fe;
+        }
+
+        /* Links */
+        a {
+            color: #4facfe;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #1f2933;
+            color: white;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .card-container {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="container">
+        <h1>Suman Chandra Adhikari</h1>
+        <p>CSIT Student |  web design | Lifelong Learner</p>
+    </div>
+</header>
+
+<section id="about">
+    <div class="container">
+        <h2>About Me</h2>
+        <div class="card">
+            <p>
+                Hello! I am <strong>Suman Chandra Adhikari</strong>, currently studying
+                <strong>Computer Science and Information Technology (CSIT)</strong> at
+                <strong>Birendra Multiple Campus</strong>. I am passionate about programming,
+                technology, and solving problems through code.
+            </p>
+            <p>
+                I enjoy creating simple projects, exploring new technologies, and improving my skills
+                step by step. My goal is to become a skilled software developer who can build practical
+                solutions and help people through technology.
+            </p>
+            <p>
+                I am a dedicated learner, enjoy teamwork, and like to challenge myself with new coding
+                problems every day.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section id="education">
+    <div class="container">
+        <h2>Education</h2>
+        <div class="card">
+            <h3>BSc. CSIT</h3>
+            <p>Birendra Multiple Campus</p>
+            <p>Learning programming, databases, web development, and computer networks.</p>
+        </div>
+    </div>
+</section>
+
+<section id="skills">
+    <div class="container">
+        <h2>Skills</h2>
+        <div class="card-container">
+            <div class="card">HTML & CSS</div>
+            <div class="card">JavaScript (Basics)</div>
+            <div class="card">Problem Solving</div>
+            <div class="card">Teamwork & Collaboration</div>
+            <div class="card">Learning New Technologies</div>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <div class="container">
+        <h2>Contact Me</h2>
+        <div class="card">
+            <p><strong>Phone:</strong> +977 9864444881</p>
+            <p><strong>Email:</strong> <a href="mailto:sumanadhikari221g@gmail.com">sumanadhikari221g@gmail.com</a></p>
+            <p><strong>Location:</strong> Nepal</p>
+            <button onclick="alert('Hello! Thanks for visiting my portfolio 😊')">Say Hello</button>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2025 Suman Chandra Adhikari</p>
+</footer>
+
+</body>
+</html>
